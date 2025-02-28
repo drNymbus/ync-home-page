@@ -12,42 +12,42 @@ html
 		div(class="description")
 			p= description
 		div(class="link")
-			if x.link
+			if x && x.link
 				p
 					img(src="/home/public/icons/x_icon.png")
 					if x.reason
 						a(href=x.link) !{x.reason}
 					else
 						a(href=x.link) Follow me on X
-			if soundcloud.link
+			if soundcloud && soundcloud.link
 				p
 					img(src="/home/public/icons/soundcloud_icon.png")
 					if soundcloud.reason
 						a(href=soundcloud.link) !{soundcloud.reason}
 					else
 						a(href=soundcloud.link) Soundcloud
-			if ig.link
+			if ig && ig.link
 				p
 					img(src="/home/public/icons/ig_icon.png")
 					if ig.reason
 						a(href=ig.link) !{ig.reason}
 					else
 						a(href=ig.link) Follow me on Instagram
-			if linkedin.link
+			if linkedin && linkedin.link
 				p
 					img(src="/home/public/icons/linkedin_icon.png")
 					if linkedin.reason
 						a(href=linkedin.link) !{linkedin.reason}
 					else
 						a(href=linkedin.link) Linkedin
-			if github.link
+			if github && github.link
 				p
 					img(src="/home/public/icons/github_icon.png")
 					if github.reason
 						a(href=github.link) !{github.reason}
 					else
 						a(href=github.link) Github
-			if mail.link
+			if mail && mail.link
 				p
 					img(src="/home/public/icons/mail_icon.png")
 					if mail.reason
