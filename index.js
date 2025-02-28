@@ -7,6 +7,8 @@ const fs = require('fs');
 const app = express();
 const port = 8080;
 
+const publicURL = 'http://yn-corp.xyz/home/public';
+
 // app.use('/', express.static(path.join(__dirname, 'public')));
 app.get('/home/public/*', (req, res) => {
 	const publicPath = path.join(__dirname, 'public');
@@ -20,7 +22,6 @@ app.get('/home', (_, res) => {
 })
 
 app.get('/home/about/*', (req, res) => {
-	const publicURL = 'http://localhost:8080/home/public';
 	let data = JSON.parse(fs.readFileSync('data/about.json', 'utf8'));
 	let user = req.params[0].split('/')[0];
 
@@ -31,8 +32,6 @@ app.get('/home/about/*', (req, res) => {
 })
 
 app.get('/home/gallery', (_, res) => {
-	const publicURL = 'http://localhost:8080/home/public';
-
 	const data_about = JSON.parse(fs.readFileSync('data/about.json', 'utf8'));
 	let data_gallery = JSON.parse(fs.readFileSync('data/gallery.json', 'utf8'));
 
