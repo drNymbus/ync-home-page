@@ -19,6 +19,13 @@ html
 						a(href=x.link) !{x.reason}
 					else
 						a(href=x.link) Follow me on X
+			if soundcloud.link
+				p
+					img(src="/home/public/icons/soundcloud_icon.png")
+					if soundcloud.reason
+						a(href=soundcloud.link) !{soundcloud.reason}
+					else
+						a(href=soundcloud.link) Soundcloud
 			if ig.link
 				p
 					img(src="/home/public/icons/ig_icon.png")
