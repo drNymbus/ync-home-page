@@ -1,0 +1,137 @@
+{
+	"alexandre": {
+		"fullname": "Alexandre Sarrazin",
+		"title": "", "image": "",
+		"quote": "",
+		"abstract": "Artist not aware of being one, always down to party and join in silly projects",
+		"description": "",
+		"x": {
+			"link": "",
+			"reason": ""
+		},
+		"ig": {
+			"link": "",
+			"reason": ""
+		},
+		"linkedin": {
+			"link": "",
+			"reason": ""
+		},
+		"github": {
+			"link": "",
+			"reason": ""
+		},
+		"mail": {
+			"link": "",
+			"reason": ""
+		}
+	},
+	"alexis": {
+		"fullname": "Alexis Lottin",
+		"title": "", "image": "alexis_pic.jpg",
+		"quote": "",
+		"abstract": "Trained UI/UX Designer, living his best life and loaning Kamas (cryptocurrency) at will",
+		"description": "",
+		"x": {
+			"link": "",
+			"reason": ""
+		},
+		"ig": {
+			"link": "",
+			"reason": ""
+		},
+		"linkedin": {
+			"link": "",
+			"reason": ""
+		},
+		"github": {
+			"link": "",
+			"reason": ""
+		},
+		"mail": {
+			"link": "",
+			"reason": ""
+		}
+	},
+	"luc": {
+		"fullname": "Luc Gonzalez",
+		"title": "", "image": "",
+		"quote": "",
+		"abstract": "Best Beatmaker alive (not negociable), also Deputy-Mayor in Bordeaux (France)",
+		"description": "",
+		"x": {
+			"link": "",
+			"reason": ""
+		},
+		"ig": {
+			"link": "",
+			"reason": ""
+		},
+		"linkedin": {
+			"link": "",
+			"reason": ""
+		},
+		"github": {
+			"link": "",
+			"reason": ""
+		},
+		"mail": {
+			"link": "",
+			"reason": ""
+		}
+	},
+	"thibaut": {
+		"fullname": "Thibaut Escalante",
+		"title": "", "image": "",
+		"quote": "",
+		"abstract": "Trained Data scientist, Rapper/Poet/Python programmer/Apex Legends Pro Gamer/Love Lifer. There's not a single thing this guy won't try to understand",
+		"description": "",
+		"x": {
+			"link": "",
+			"reason": ""
+		},
+		"ig": {
+			"link": "",
+			"reason": ""
+		},
+		"linkedin": {
+			"link": "",
+			"reason": ""
+		},
+		"github": {
+			"link": "",
+			"reason": ""
+		},
+		"mail": {
+			"link": "",
+			"reason": ""
+		}
+	},
+	"victor": {
+		"fullname": "Victor Melançon",
+		"title": "Genesis", "image": "victor_pp.png",
+		"quote": "Sauce au poivre",
+		"abstract": "Trained Data scientist, working as a Database Administrator in Montpellier (France)",
+		"description": "Yo! This is me telling what I've done.",
+		"x": {
+			"link": "https://x.com/Nymbus6",
+			"reason": "I repost cool stuff on X"
+		},
+		"ig": {
+			"link": "https://www.instagram.com/nymbus.prod",
+			"reason": "Sometimes I post beats I've done"
+		},
+		"linkedin": {
+			"link": "https://www.linkedin.com/in/victor-melan%C3%A7on-891876199/",
+			"reason": "The kind of social network you need but don't want to be part of"
+		},
+		"github": {
+			"link": "https://github.com/drNymbus",
+			"reason": "All my projects (... I've ever began but rarely finished)"
+		},
+		"mail": {
+			"link": "victor.melancon0@gmail.com",
+			"reason": "Mail me about anything !"
+		}
+	}
+}

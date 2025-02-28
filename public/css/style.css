@@ -1,0 +1,88 @@
+html {
+	font-family: "Atkinson Hyperlegible Mono", serif;
+	font-optical-sizing: auto;
+	font-weight: 14;
+	font-style: normal;
+}
+
+div {
+	text-align: center;
+}
+
+.content {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.team {
+	text-align: left;
+}
+
+.footnote {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #d7cdc6;
+}
+
+div.header {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+div.header img {
+	float: left;
+	vertical-align: middle;
+	margin-right: 20px;
+
+	width: 200px;
+	/* height: 10%; */
+	clip-path: circle();
+}
+
+div.header h1 {
+	display: flex;
+	justify-content: left;
+	margin-bottom: -15px;
+
+	text-decoration: green wavy underline;
+}
+
+div.header h3 {
+	display: flex;
+	justify-content: left;
+	padding-left: 20px;
+}
+
+div.description {
+	margin-top: 200px;
+	margin-bottom: 200px;
+}
+
+div.link p {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+div.link img{
+	width: 25px;
+	margin-right: 20px;
+}
+
+div.link a {
+	vertical-align: baseline;
+}
+
+div.projects {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	grid-template-columns: 200px 200px 200px;
+}
+
+/* a.author {
+	align-items: right;
+} */

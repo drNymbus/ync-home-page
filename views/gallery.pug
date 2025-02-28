@@ -1,0 +1,19 @@
+doctype html
+html
+	head
+		include head
+		title YNC - Gallery
+	body
+		div.projects
+			each p in projects
+				div
+					img(src=p.snippet)
+					br
+					p <a href=!{p.link}>!{p.name}</a> (<a href=!{p.source}>Source</a>)
+					br
+					div.authors
+						p Authors:
+						mixin authors(a)
+							a.author(href=a.link) !{a.name} <br>
+						each a in p.authors
+							+authors(a)

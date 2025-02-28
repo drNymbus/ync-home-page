@@ -1,0 +1,16 @@
+[
+	{
+		"name": "YNC Shop",
+		"snippet": "shop.jpg",
+		"link": "https://yn-corp.xyz/shop",
+		"source": "https://github.com/drNymbus/ync-app-shop",
+		"authors": ["thibaut", "alexis", "victor"]
+	},
+	{
+		"name": "Camaretto",
+		"snippet": "camaretto.jpg",
+		"link": "https://yn-corp.xyz/camaretto",
+		"source": "https://github.com/drNymbus/ync-app-camaretto",
+		"authors": ["thibaut", "alexandre", "victor"]
+	}
+]

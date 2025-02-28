@@ -1,0 +1,49 @@
+doctype html
+html
+	head
+		include head.pug
+		title YNC - About
+	body
+		div(class="header")
+			img(src=image)
+			h1= fullname
+			h3= title
+			q(class	="quote")= quote
+		div(class="description")
+			p= description
+		div(class="link")
+			if x.link
+				p
+					img(src="/public/icons/x_icon.png")
+					if x.reason
+						a(href=x.link) !{x.reason}
+					else
+						a(href=x.link) Follow me on X
+			if ig.link
+				p
+					img(src="/public/icons/ig_icon.png")
+					if ig.reason
+						a(href=ig.link) !{ig.reason}
+					else
+						a(href=ig.link) Follow me on Instagram
+			if linkedin.link
+				p
+					img(src="/public/icons/linkedin_icon.png")
+					if linkedin.reason
+						a(href=linkedin.link) !{linkedin.reason}
+					else
+						a(href=linkedin.link) Linkedin
+			if github.link
+				p
+					img(src="/public/icons/github_icon.png")
+					if github.reason
+						a(href=github.link) !{github.reason}
+					else
+						a(href=github.link) Github
+			if mail.link
+				p
+					img(src="/public/icons/mail_icon.png")
+					if mail.reason
+						a(href=`mailto:${mail.link}`) !{mail.reason}
+					else
+						a(href=`mailto:${mail.link}`) E-Mail
