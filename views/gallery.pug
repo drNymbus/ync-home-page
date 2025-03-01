@@ -4,13 +4,15 @@ html
 		include head
 		title YNC - Gallery
 	body
-		div.projects
+		div.showcase
 			each p in projects
-				div
+				div.project
 					img(src=p.snippet)
 					br
-					p <a href=!{p.link}>!{p.name}</a> (<a href=!{p.source}>Source</a>)
-					br
+					if p.source
+						p <a href=!{p.link}>!{p.name}</a> (<a href=!{p.source}>Source</a>)
+					else
+						p <a href=!{p.link}>!{p.name}</a>
 					div.authors
 						p Authors:
 						mixin authors(a)

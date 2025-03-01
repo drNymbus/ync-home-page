@@ -72,9 +72,17 @@ div.link a {
 	vertical-align: baseline;
 }
 
-div.projects {
+div.showcase {
 	display: grid;
 	justify-content: center;
 	align-items: center;
-	grid-template-columns: 200px 200px 200px;
+	grid-template-columns: 30% 30%;
+}
+
+div.project {
+	margin-bottom: 50px;
+}
+
+div.project img {
+	width: 30%;
 }

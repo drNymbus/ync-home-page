@@ -12,14 +12,15 @@ const publicURL = 'http://yn-corp.xyz/home/public';
 // app.use('/', express.static(path.join(__dirname, 'public')));
 app.get('/home/public/*', (req, res) => {
 	const publicPath = path.join(__dirname, 'public');
+	console.log(publicPath, req.params[0]);
 	res.sendFile(path.join(publicPath, req.params[0]));
-})
+});
 
 app.set('view engine', 'pug');
 app.get('/home', (_, res) => {
 	const data = JSON.parse(fs.readFileSync('data/about.json', 'utf8'));
 	res.render('home', {contributors: data});
-})
+});
 
 app.get('/home/about/*', (req, res) => {
 	let data = JSON.parse(fs.readFileSync('data/about.json', 'utf8'));
@@ -29,9 +30,9 @@ app.get('/home/about/*', (req, res) => {
 	data.image = `${publicURL}/images/${data.image}`;
 
 	res.render('about', data);
-})
+});
 
-app.get('/home/gallery', (_, res) => {
+app.get('/home/gallery/', (_, res) => {
 	const data_about = JSON.parse(fs.readFileSync('data/about.json', 'utf8'));
 	let data_gallery = JSON.parse(fs.readFileSync('data/gallery.json', 'utf8'));
 
@@ -43,13 +44,13 @@ app.get('/home/gallery', (_, res) => {
 			p.authors[j] = a;
 		}
 
-		p.snippet = `${publicURL}/gallery/${p.snippet}`;
+		p.snippet = `/home/public/${p.snippet}`;
 
 		data_gallery[i] = p;
 	}
 
 	res.render('gallery', {projects: data_gallery});
-})
+});
 
 app.listen(port, () => {
 	console.log(`HTTP server running on port ${port}`);
