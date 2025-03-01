@@ -5,26 +5,7 @@
 		"quote": "",
 		"abstract": "Artist not aware of being one, always down to party and join in silly projects",
 		"description": "",
-		"x": {
-			"link": "",
-			"reason": ""
-		},
-		"ig": {
-			"link": "",
-			"reason": ""
-		},
-		"linkedin": {
-			"link": "",
-			"reason": ""
-		},
-		"github": {
-			"link": "",
-			"reason": ""
-		},
-		"mail": {
-			"link": "",
-			"reason": ""
-		}
+		"contact" : {}
 	},
 	"alexis": {
 		"fullname": "Alexis Lottin",
@@ -32,25 +13,27 @@
 		"quote": "If you gaze long enough into an abyss, the abyss will gaze back into you.",
 		"abstract": "Trained UI/UX Designer, living his best life and loaning Kamas (cryptocurrency) at will",
 		"description": "Product Designer, specialized in digital interfaces. He's a big procrastinator who loves art in all its forms, video games and is tortured by his perfectionism, which causes him to tread water a little too often. He also enjoys cooking and baking.",
-		"x": {
-			"link": "https://x.com/CallMeSenpaiPls",
-			"reason": ""
-		},
-		"ig": {
-			"link": "http://instagram.com/spadedsign/?hl=fr",
-			"reason": "A few creations when I feel like it :)"
-		},
-		"linkedin": {
-			"link": "https://www.linkedin.com/in/alexis-lottin/",
-			"reason": "I'm just being here."
-		},
-		"github": {
-			"link": "https://github.com/Spadeyng",
-			"reason": "I never thought github was intuitive..."
-		},
-		"mail": {
-			"link": "lottin.alexis@proton.me",
-			"reason": "Hit me up for your needs !"
+		"contact" : {
+			"x": {
+				"link": "https://x.com/CallMeSenpaiPls",
+				"reason": "Follow me on X"
+			},
+			"ig": {
+				"link": "http://instagram.com/spadedsign/?hl=fr",
+				"reason": "A few creations when I feel like it :)"
+			},
+			"linkedin": {
+				"link": "https://www.linkedin.com/in/alexis-lottin/",
+				"reason": "I'm just being here."
+			},
+			"github": {
+				"link": "https://github.com/Spadeyng",
+				"reason": "I never thought github was intuitive..."
+			},
+			"mail": {
+				"link": "lottin.alexis@proton.me",
+				"reason": "Hit me up for your needs !"
+			}
 		}
 	},
 	"luc": {
@@ -59,29 +42,15 @@
 		"quote": "Les sorcières se sèguent. Les monstres et les fantômes aussi.",
 		"abstract": "Best Beatmaker alive (not negociable), also Deputy-Mayor in Bordeaux (France)",
 		"description": "Once upon a time, in a small village in Japan, there lived a young ninja named Luc. He was known for his incredible speed and stealth, but he had a secret passion that no one knew about. In the quiet of his room, Luc would spend hours creating beats with his trusty drum machine. He had a natural talent for music, and he loved nothing more than experimenting with different sounds and rhythms. One day, Luc's master discovered his secret hobby and was furious. He believed that a ninja should focus solely on their martial arts skills and should not be distracted by frivolous pursuits. But Luc refused to give up his passion for music. He continued to make beats in his room, secretly honing his skills. Eventually, Luc's talent caught the attention of a local music producer (Thibaut Escalante), who was impressed by his unique sound. He offered Luc a recording contract, and soon Luc's beats were being played on the radio and at clubs across the entire galaxy. Luc had found a way to combine his two passions and become a successful musician. And even though his master never approved of his choice, Luc knew that he had made the right decision. He was happy and fulfilled, and he continued to create music for the rest of his days.",
-		"x": {
-			"link": "",
-			"reason": ""
-		},
-		"ig": {
-			"link": "",
-			"reason": ""
-		},
-		"linkedin": {
-			"link": "",
-			"reason": ""
-		},
-		"github": {
-			"link": "",
-			"reason": ""
-		},
-		"soundcloud": {
-			"link": "https://soundcloud.com/ninjasauvage",
-			"reason": ""
-		},
-		"mail": {
-			"link": "lucky4sound@gmail.com",
-			"reason": ""
+		"contact" : {
+			"soundcloud": {
+				"link": "https://soundcloud.com/ninjasauvage",
+				"reason": "Soundcloud"
+			},
+			"mail": {
+				"link": "lucky4sound@gmail.com",
+				"reason": "E-Mail"
+			}
 		}
 	},
 	"thibaut": {
@@ -90,26 +59,7 @@
 		"quote": "",
 		"abstract": "Trained Data scientist, Rapper/Poet/Python programmer/Apex Legends Pro Gamer/Life Lover. There's not a single thing this guy won't try to understand",
 		"description": "",
-		"x": {
-			"link": "",
-			"reason": ""
-		},
-		"ig": {
-			"link": "",
-			"reason": ""
-		},
-		"linkedin": {
-			"link": "",
-			"reason": ""
-		},
-		"github": {
-			"link": "",
-			"reason": ""
-		},
-		"mail": {
-			"link": "",
-			"reason": ""
-		}
+		"contact" : {}
 	},
 	"victor": {
 		"fullname": "Victor Melançon",
@@ -117,29 +67,31 @@
 		"quote": "Sauce au poivre",
 		"abstract": "Trained Data scientist, working as a Database Administrator in Montpellier (France)",
 		"description": "Yo! This is me telling what I've done.",
-		"x": {
-			"link": "https://x.com/Nymbus6",
-			"reason": "I repost cool stuff on X"
-		},
-		"soundcloud": {
-			"link": "https://soundcloud.com/dr_nymbus",
-			"reason": "Sometimes I post beats I've done"
-		},
-		"ig": {
-			"link": "https://www.instagram.com/nymbus.prod",
-			"reason": "Sometimes I even take time to create video clips"
-		},
-		"linkedin": {
-			"link": "https://www.linkedin.com/in/victor-melan%C3%A7on-891876199/",
-			"reason": "The kind of social network you need but don't want to be part of"
-		},
-		"github": {
-			"link": "https://github.com/drNymbus",
-			"reason": "All my projects (... I've ever began but rarely finished)"
-		},
-		"mail": {
-			"link": "victor.melancon0@gmail.com",
-			"reason": "Mail me about anything !"
+		"contact": {
+			"x": {
+				"link": "https://x.com/Nymbus6",
+				"reason": "I repost cool stuff on X"
+			},
+			"soundcloud": {
+				"link": "https://soundcloud.com/dr_nymbus",
+				"reason": "Sometimes I post beats I've done"
+			},
+			"ig": {
+				"link": "https://www.instagram.com/nymbus.prod",
+				"reason": "Sometimes I even take time to create video clips"
+			},
+			"linkedin": {
+				"link": "https://www.linkedin.com/in/victor-melan%C3%A7on-891876199/",
+				"reason": "The kind of social network you need but don't want to be part of"
+			},
+			"github": {
+				"link": "https://github.com/drNymbus",
+				"reason": "All my projects (... I've ever began but rarely finished)"
+			},
+			"mail": {
+				"link": "victor.melancon0@gmail.com",
+				"reason": "Mail me about anything !"
+			}
 		}
 	}
 }
