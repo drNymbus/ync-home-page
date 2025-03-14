@@ -1,11 +1,16 @@
 {
 	"alexandre": {
 		"fullname": "Alexandre Sarrazin",
-		"title": "", "image": "",
-		"quote": "",
+		"title": "Illustrator", "image": "alexandre_pic.jpg",
+		"quote": "He who lives will see.",
 		"abstract": "Artist not aware of being one, always down to party and join in silly projects",
-		"description": "",
-		"contact" : {}
+		"description": "Also called Umialb or Tchoupi, pick whatever suits you (he already have trouble choosing his own dinner :/ ). Interested in human adventures because he has been immersed since childhood in travel and mangas. He never refrains himself to live in his bubble because bubbles fly. Beginner illustrator, he's actively looking for a way of life as free as his drawings. Will he manage to find it one day...? To be continued.",
+		"contact" : {
+			"ig": {
+				"link": "https://www.instagram.com/umialb_ync/",
+				"reason": "Some of his drawings"
+			}
+		}
 	},
 	"alexis": {
 		"fullname": "Alexis Lottin",
@@ -66,7 +71,7 @@
 		"title": "Genesis", "image": "victor_pp.png",
 		"quote": "Sauce au poivre",
 		"abstract": "Trained Data scientist, working as a Database Administrator in Montpellier (France)",
-		"description": "Yo! This is me telling what I've done.",
+		"description": "Victor Melançon is data engineer and database administrator, blending Canadian politeness with French sophistication. He expertly manages data warehouses and streamlines complex ETL pipelines. Victor approaches projects with enthusiasm, always eager to explore new ideas, even if he doesn't always see them through to completion. For him, the joy is in the learning and discovery. Outside of work, Victor enjoys chess, composing music, and traveling around the world.",
 		"contact": {
 			"x": {
 				"link": "https://x.com/Nymbus6",

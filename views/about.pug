@@ -2,17 +2,20 @@ doctype html
 html
 	head
 		include head.pug
+		link(rel="stylesheet", href="/home/public/css/about.css")
 		title YNC - About
 	body
-		div(class="header")
-			img(src=image)
-			h1= fullname
-			h3= title
-			q(class	="quote")= quote
-		div(class="description")
-			p= description
-		div(class="link")
-			each info, social in contact
-				p
-					img(src=`/home/public/icons/${social}_icon.png`)
-					a(href=info.link) !{info.reason}
+		include menu.pug
+		div.content
+			div.header
+				img(src=image)
+				h1= fullname
+				h3= title
+				q.quote= quote
+			div.description
+				p= description
+			div.link
+				each info, social in contact
+					p
+						img(src=`/home/public/icons/${social}_icon.png`)
+						a(href=info.link) !{info.reason}

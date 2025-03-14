@@ -1,21 +1,25 @@
 doctype html
 html
 	head
-		include head
+		include head.pug
+		link(rel="stylesheet", href="/home/public/css/gallery.css")
 		title YNC - Gallery
 	body
-		div.showcase
-			each p in projects
-				div.project
-					img(src=p.snippet)
-					br
-					if p.source
-						p <a href=!{p.link}>!{p.name}</a> (<a href=!{p.source}>Source</a>)
-					else
-						p <a href=!{p.link}>!{p.name}</a>
-					div.authors
-						p Authors:
-						mixin authors(a)
-							a.author(href=a.link) !{a.name} <br>
-						each a in p.authors
-							+authors(a)
+		include menu.pug
+		div.content
+			div.showcase
+				each p in projects
+					div.project
+						//- img(src=p.snippet)
+						div.title
+							if p.source
+								p <a href=!{p.link}>!{p.name}</a> (<a href=!{p.source}>Source</a>)
+							else
+								p <a href=!{p.link}>!{p.name}</a>
+						div.authors
+							p Authors:
+							mixin authors(a)
+								a.author(href=a.link) !{a.name} <br>
+							each a in p.authors
+								+authors(a)
+		include footnote.pug

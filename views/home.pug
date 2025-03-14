@@ -4,6 +4,7 @@ html
 		include head.pug
 		title YNC - Home
 	body
+		include menu.pug
 		div(class="content")
 			h1 Hello World Wide Web !
 
@@ -18,5 +19,4 @@ html
 
 			p This website is, first of all, for us (the YNC) but also for you ! If you wish to use our craftsmanship to build/learn/try something or if you simply want to hop on a project in the <a href="/home/gallery">gallery</a> that's cool enough for you, <b>do not hesitate to contact us</b>.
 
-		div(class="footnote")
-			p <a href="https://discord.gg/fmRPHE5shu">Join us on Discord</a> | <a href="https://x.com/ync_corporation">Follow us on X</a> | <a href="https://www.youtube.com/@YNGCorporation">Follow us on Youtube</a>
+		include footnote.pug

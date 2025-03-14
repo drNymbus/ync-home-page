@@ -1,0 +1,26 @@
+div.header img {
+	width: 20%;
+	clip-path: circle();
+	margin-top: 20px;
+}
+
+div.header h3 {
+	margin-top: -20px;
+}
+
+div.link p {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+div.link img{
+	width: 25px;
+	margin-right: 20px;
+}
+
+div.link a {
+	vertical-align: baseline;
+}
