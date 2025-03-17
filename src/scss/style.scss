@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap');
+
+
+html {
+	font-family: "DotGothic16";
+	font-optical-sizing: auto;
+	font-weight: 14;
+	font-style: normal;
+}
+
+
+body{
+	color: #4c5714;
+	margin: 5vh 20vh 5vh 20vh;
+	// background-color: #D5FE00; /* Couleur de fond légère */
+	background-color: rgb(250, 250, 250); /* Couleur de fond légère */
+}
+
+
+a{
+	color: #ff3a3a; /* Couleur par défaut des liens */
+	text-decoration: none; /* Enlève le soulignement par défaut */
+	transition: color 2s ease;
+}
+
+a:hover{
+	transition: none;
+	color: aqua;
+}
+
+h3{
+	margin: 0;
+}
+
+.wrapper-typing-machine {
+	height: 100px;
+	justify-content: center;
+	/*This part is important for centering*/
+	display: flex;
+	place-items: center;
+  }
+  
+
+  .title-typing-machine-effect {
+	font-family: "DotGothic16";
+	color: #ff3a3a;
+	letter-spacing: 1px;
+	width: 550px;
+	animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 3px solid;
+	font-size: 2em;
+  }
+  
+
+  @keyframes typing {
+	from {
+	  width: 0
+	}
+  }
+	  
+
+  @keyframes blink {
+	50% {
+	  border-color: transparent
+	}
+  }
+
+
+.presentation {
+	padding: 20px 125px 20px 125px;
+	border: 1px solid black;
+}
+
+.presentation2 {
+	margin-top: 60px;
+	padding: 20px 125px 20px 125px;
+	border: 1px solid black;
+
+}
+
+
+.team {
+	padding: 20px 0px 0px 0px;
+}
+
+
+li {
+	padding: 5px 10px;
+}
+
+
+.footnote {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	bottom: 5vh;
+	left: 0;
+	font-family: "Jacquard 24";
+	font-size: 2rem;
+}
+
+.footnote a{
+	padding: 0px 20px;
+	color: #ff3a3a;
+	text-decoration: none; /* Enlève le soulignement par défaut */
+	transition: color 2s ease;
+}
+
+.footnote a:hover{
+	transition: none;
+	color: aqua;
+}
+
+
+div.header img {
+	float: left;
+	vertical-align: middle;
+	margin-right: 20px;
+
+	width: 200px;
+	clip-path: circle();
+}
+
+
+div.header h1 {
+	display: flex;
+	justify-content: left;
+	margin-bottom: -15px;
+
+	text-decoration: green wavy underline;
+}
+
+
+div.description {
+	margin-top: 200px;
+	margin-bottom: 50px;
+}
+
+
+div.link p {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+
+div.link img{
+	width: 25px;
+	margin-right: 20px;
+}
+
+
+div.link a {
+	vertical-align: baseline;
+}
+
+
+div.showcase {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	grid-template-columns: 30% 30%;
+}
+
+
+div.project {
+	margin-bottom: 50px;
+}
+
+
+div.project img {
+	width: 30%;
+}
