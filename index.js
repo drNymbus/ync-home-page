@@ -3,13 +3,15 @@ const express = require('express');
 const path = require('path')
 const fs = require('fs');
 
+const db = require('./data.js');
+const client = db.Connect();
+
 // Configure & Run the http server
 const app = express();
 const port = 8080;
 
 const publicURL = 'http://yn-corp.xyz/home/public';
 
-// app.use('/', express.static(path.join(__dirname, 'public')));
 app.get('/home/public/*', (req, res) => {
 	const publicPath = path.join(__dirname, 'public');
 	console.log(publicPath, req.params[0]);
@@ -18,37 +20,19 @@ app.get('/home/public/*', (req, res) => {
 
 app.set('view engine', 'pug');
 app.get('/home', (_, res) => {
-	const data = JSON.parse(fs.readFileSync('data/about.json', 'utf8'));
+	const data = db.getContributors(client);
 	res.render('home', {contributors: data});
 });
 
 app.get('/home/about/*', (req, res) => {
-	let data = JSON.parse(fs.readFileSync('data/about.json', 'utf8'));
-	let user = req.params[0].split('/')[0];
-
-	data = data[user];
-	data.image = `${publicURL}/images/${data.image}`;
+	const user = req.params[0].split('/')[0];
+	const data = db.getContributor(client, user);
 
 	res.render('about', data);
 });
 
 app.get('/home/gallery/', (_, res) => {
-	const data_about = JSON.parse(fs.readFileSync('data/about.json', 'utf8'));
-	let data_gallery = JSON.parse(fs.readFileSync('data/gallery.json', 'utf8'));
-
-	for (let i=0; i < data_gallery.length; i++) {
-		let p = data_gallery[i]
-		for (let j=0; j < p.authors.length; j++) {
-			let a = p.authors[j];
-			a = { name: data_about[a].fullname, link: `/home/about/${a}` };
-			p.authors[j] = a;
-		}
-
-		p.snippet = `/home/public/${p.snippet}`;
-
-		data_gallery[i] = p;
-	}
-
+	const data = db.getGallery(client);
 	res.render('gallery', {projects: data_gallery});
 });
 
