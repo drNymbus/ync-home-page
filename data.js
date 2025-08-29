@@ -11,7 +11,7 @@ function connect() {
 
 	const client = new MongoClient(uri);
 	return client;
-}
+}; exports.connect = connect;
 
 function getContributors(client) {
 	const contributors = client.db('home').collection('contributors');
@@ -23,13 +23,13 @@ function getContributors(client) {
 	});
 
 	return data;
-}
+}; exports.getContributors = getContributors;
 
 function getContributor(client, user) {
 	let data = client.db('home').collection('contributors').find({ id: user });
 	data.image = `data:image/jpeg;base64,${data.image}`;
 	return data;
-}
+}; exports.getContributor = getContributor;
 
 function getGallery(client) {
 	const contributors = client.db('home').collection('contributors');
@@ -42,9 +42,9 @@ function getGallery(client) {
 	});
 
 	let gallery = client.db('home').collection('gallery');
-	for project in gallery {
-		for a in project.authors { a = authors[a]; }
+	for (let project of gallery) {
+		for (let a of project.authors) { a = authors[a]; }
 	}
 
 	return gallery;
-}
+}; exports.getGallery = getGallery;
