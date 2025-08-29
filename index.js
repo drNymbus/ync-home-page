@@ -25,7 +25,7 @@ app.set('view engine', 'pug');
 app.get('/home', async (_, res) => {
 	const data = await db.getContributors(client);
 	console.log('HOME');
-	// console.log(data);
+	console.log(data);
 	console.log('==============================================');
 	res.render('home', {contributors: data});
 });
@@ -34,7 +34,7 @@ app.get('/home/about/*', async (req, res) => {
 	const user = req.params[0].split('/')[0];
 	const data = await db.getContributor(client, user);
 	console.log('ABOUT');
-	// console.log(data);
+	console.log(data);
 	console.log('==============================================');
 	res.render('about', data);
 });
@@ -42,7 +42,7 @@ app.get('/home/about/*', async (req, res) => {
 app.get('/home/gallery/', async (_, res) => {
 	const data = await db.getGallery(client);
 	console.log('GALLERY');
-	// console.log(data);
+	console.log(data);
 	console.log('==============================================');
 	res.render('gallery', {projects: data});
 });

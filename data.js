@@ -28,7 +28,8 @@ async function getContributors(client) {
 
 async function getContributor(client, user) {
 	const collection = client.db('home').collection('contributors');
-	let data = collection.find({ id: user });
+	let data = await collection.find({ id: user }).toArray();
+	data = data[0];
 	data.image = `data:image/jpeg;base64,${data.image}`;
 	return data;
 }; exports.getContributor = getContributor;
