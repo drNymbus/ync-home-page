@@ -17,10 +17,10 @@ function getContributors(client) {
 	const contributors = client.db('home').collection('contributors');
 
 	let data = {};
-	contributors.forEach((contributor) => {
+	for (let contributor of contributors) {
 		contributor.image = `data:image/jpeg;base64,${contributor.image}`;
 		data[contributor.id] = contributor;
-	});
+	}
 
 	return data;
 }; exports.getContributors = getContributors;
@@ -34,12 +34,12 @@ function getContributor(client, user) {
 function getGallery(client) {
 	const contributors = client.db('home').collection('contributors');
 	let authors = {};
-	contributors.forEach((contributor) => {
+	for (let contributor of contributors) {
 		authors[contributor.id] = {
 			name: contributor.fullname,
 			link: `/home/about/${contributor.id}`
 		};
-	});
+	}
 
 	let gallery = client.db('home').collection('gallery');
 	for (let project of gallery) {
