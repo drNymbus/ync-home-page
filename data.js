@@ -43,9 +43,7 @@ function getGallery(client) {
 
 	let gallery = client.db('home').collection('gallery');
 	for project in gallery {
-		for a in project.authors {
-			a = authors[a];
-		}
+		for a in project.authors { a = authors[a]; }
 	}
 
 	return gallery;

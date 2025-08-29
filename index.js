@@ -4,13 +4,13 @@ const path = require('path')
 const fs = require('fs');
 
 const db = require('./data.js');
-const client = db.Connect();
+const client = db.connect();
 
 // Configure & Run the http server
 const app = express();
 const port = 8080;
 
-const publicURL = 'http://yn-corp.xyz/home/public';
+// const publicURL = 'http://yn-corp.xyz/home/public';
 
 app.get('/home/public/*', (req, res) => {
 	const publicPath = path.join(__dirname, 'public');
@@ -21,19 +21,27 @@ app.get('/home/public/*', (req, res) => {
 app.set('view engine', 'pug');
 app.get('/home', (_, res) => {
 	const data = db.getContributors(client);
+	console.log('HOME');
+	console.log(data);
+	console.log('==============================================');
 	res.render('home', {contributors: data});
 });
 
 app.get('/home/about/*', (req, res) => {
 	const user = req.params[0].split('/')[0];
 	const data = db.getContributor(client, user);
-
+	console.log('ABOUT');
+	console.log(data);
+	console.log('==============================================');
 	res.render('about', data);
 });
 
 app.get('/home/gallery/', (_, res) => {
 	const data = db.getGallery(client);
-	res.render('gallery', {projects: data_gallery});
+	console.log('GALLERY');
+	console.log(data);
+	console.log('==============================================');
+	res.render('gallery', {projects: data});
 });
 
 app.listen(port, () => {
