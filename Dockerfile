@@ -3,7 +3,7 @@ FROM node:16
 WORKDIR /usr/src/app
 
 # Install app dependencies
-COPY data/ data/
+# COPY data/ data/
 COPY public/ public/
 COPY views/ views/
 COPY package*.json ./
