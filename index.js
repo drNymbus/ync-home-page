@@ -5,6 +5,9 @@ const fs = require('fs');
 
 const db = require('./data.js');
 const client = db.connect();
+client.db("home").command({ ping: 1 })
+    .then(r => console.log(r))
+    .catch(e => console.error(e));
 
 // Configure & Run the http server
 const app = express();
@@ -19,27 +22,27 @@ app.get('/home/public/*', (req, res) => {
 });
 
 app.set('view engine', 'pug');
-app.get('/home', (_, res) => {
-	const data = db.getContributors(client);
+app.get('/home', async (_, res) => {
+	const data = await db.getContributors(client);
 	console.log('HOME');
-	console.log(data);
+	// console.log(data);
 	console.log('==============================================');
 	res.render('home', {contributors: data});
 });
 
-app.get('/home/about/*', (req, res) => {
+app.get('/home/about/*', async (req, res) => {
 	const user = req.params[0].split('/')[0];
-	const data = db.getContributor(client, user);
+	const data = await db.getContributor(client, user);
 	console.log('ABOUT');
-	console.log(data);
+	// console.log(data);
 	console.log('==============================================');
 	res.render('about', data);
 });
 
-app.get('/home/gallery/', (_, res) => {
-	const data = db.getGallery(client);
+app.get('/home/gallery/', async (_, res) => {
+	const data = await db.getGallery(client);
 	console.log('GALLERY');
-	console.log(data);
+	// console.log(data);
 	console.log('==============================================');
 	res.render('gallery', {projects: data});
 });

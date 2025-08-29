@@ -13,11 +13,12 @@ function connect() {
 	return client;
 }; exports.connect = connect;
 
-function getContributors(client) {
-	const contributors = client.db('home').collection('contributors');
-
+async function getContributors(client) {
+	const collection = client.db('home').collection('contributors');
+	const contributors = await collection.find().toArray();
 	let data = {};
 	for (let contributor of contributors) {
+		console.log(contributor.fullname);
 		contributor.image = `data:image/jpeg;base64,${contributor.image}`;
 		data[contributor.id] = contributor;
 	}
@@ -25,14 +26,16 @@ function getContributors(client) {
 	return data;
 }; exports.getContributors = getContributors;
 
-function getContributor(client, user) {
-	let data = client.db('home').collection('contributors').find({ id: user });
+async function getContributor(client, user) {
+	const collection = client.db('home').collection('contributors');
+	let data = collection.find({ id: user });
 	data.image = `data:image/jpeg;base64,${data.image}`;
 	return data;
 }; exports.getContributor = getContributor;
 
-function getGallery(client) {
-	const contributors = client.db('home').collection('contributors');
+async function getGallery(client) {
+	let collection = client.db('home').collection('contributors');
+	const contributors = await collection.find().toArray();
 	let authors = {};
 	for (let contributor of contributors) {
 		authors[contributor.id] = {
@@ -41,10 +44,12 @@ function getGallery(client) {
 		};
 	}
 
-	let gallery = client.db('home').collection('gallery');
+	collection = client.db('home').collection('gallery');
+	let gallery = await collection.find().toArray();
 	for (let project of gallery) {
-		for (let a of project.authors) { a = authors[a]; }
+		project.authors = project.authors.map(el => authors[el]);
 	}
+	console.log(gallery);
 
 	return gallery;
 }; exports.getGallery = getGallery;
